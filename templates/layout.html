@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Información Personal</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+
+<body class="b4ckground">
+   <h1>{% block heading %}{% endblock %}</h1>
+   {% block body %}{% endblock %}
+</body>
+</html>

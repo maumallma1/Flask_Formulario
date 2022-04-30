@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block heading %}
+Entonces... ¿Quién eres?
+{% endblock %}
+
+{% block body %}
+<div class="box_1">
+	<h2>Datos Personales:</h2>
+	Entonces tu nombre es: <br> {{ name }}<br><br>
+	Tiene nacionalidad: <br> {{ nation }}<br><br>
+	Tu fecha de nacimiento:<br>{{ born }}<br><br>
+	Te ubicas en el departamente de:<br>{{ depart }}<br><br>
+	Y vives en el distrito de:<br>{{ distrit }}<br><br>
+	Tu ocupación en la vida es ser:<br>{{ occup }}<br><br>
+	Tienes preferencia por:<br>{{ prefer }}<br><br>
+	Tu correo electrónico es:<br>{{ email }}<br><br>
+	Y tu contraseña es:<br> {{ password }}<br><br>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Registro de Datos
+{% endblock %}
+
+{% block body %}
+<div class ="box">
+	<form action="{{ url_for('login') }}" method="post">
+		<input id="ubi" type="text" name="nombre" placeholder="Nombres y Apellidos"><br>
+		<input id="ubi" type="text" name="nacionalidad" placeholder="Nacionalidad"><br>
+		<input id="ubi" type="text" name="departamento" placeholder="Departamento"><br>
+		<input id="ubi" type="text" name="distrito" placeholder="Distrito"><br>
+		<input id="ubi" type="text" name="ocupacion" placeholder="Ocupación"><br>
+		<input id="ubi" type="text" name="preferencias" placeholder="Preferencias"><br>
+		<input id="ubi" type="email" name="correo" placeholder="Correo Electrónico"><br>
+		<input id="ubi" type="password" name="contraseña" placeholder="Contraseña"><br>
+		<input id="ubi" type="date" name="nacimiento" placeholder="Nacimiento"><br>
+		<button>Submit</button>
+	</form>
+</div>
+{% endblock %}
